@@ -74,5 +74,4 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
-        artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy -DskipTests
